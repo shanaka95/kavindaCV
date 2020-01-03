@@ -626,9 +626,9 @@ Jayewardenepura</br></p>
         // http://en.wikipedia.org/wiki/Same_origin_policy
         url: 'https://kavinda.vitaz.dev/mail.php',
         data: { 
-            'name': $("#contact-form-name").val(), 
-            'email': $("#contact-form-email").val(), 
+            'name': $("#contact-form-name").val(),  
             'subject': $("#contact-form-subject").val(), 
+            'email': $("#contact-form-email").val(),
             'message':$("#contact-form-message").val() 
         },
         success: function(msg){
