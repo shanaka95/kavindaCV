@@ -381,14 +381,14 @@ a team to achieve certain objectives on time.</p>
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
             <p>2015</p>
-            <div class="h5">District Rank - 9</div>
+            <div class="h5">GCE Advanced Level Exam</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
             <div class="h5">Advanced Level Examination (2015)</div>
-            <p class="category">District Rank 9</p>
-            <p>Kurunegala District Rank 9 in Engineering Technology</p>
+            <p class="category">Kurunegala District Rank 9 in Engineering Technology</p>
+            <p></p>
           </div>
         </div>
       </div>
@@ -538,39 +538,39 @@ Jayewardenepura</br></p>
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <form action="index.html" method="POST">
+                    <form action="mai.php" method="POST">
                       <div class="p pb-3"><strong>Feel free to contact me </strong></div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
-                            <input class="form-control" type="text" name="contact-form-name" id="contact-form-name" placeholder="Name" required="required"/>
+                            <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                            <input class="form-control" type="text" name="contact-form-subject" id="contact-form-subject" placeholder="Subject" required="required"/>
+                            <input class="form-control" type="text" name="subject" placeholder="Subject" required="required"/>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" name="contact-form-email" id="contact-form-email" laceholder="E-mail" required="required"/>
+                            <input class="form-control" type="email" name="email" laceholder="E-mail" required="required"/>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="form-group">
-                            <textarea class="form-control" name="contact-form-message" id="contact-form-message" placeholder="Your Message" required="required"></textarea>
+                            <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
                           </div>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col" id="contactDiv">
-                          <button class="btn btn-primary" type="submit" id="contact-form-submit-btn">Send</button>
+                        <div class="col">
+                          <button class="btn btn-primary" type="submit">Send</button>
                         </div>
                       </div>
                     </form>
@@ -602,45 +602,13 @@ Jayewardenepura</br></p>
         <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
       </div>
     </footer>
-    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="projects/jordan/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  
     <script src="js/core/jquery.3.2.1.min.js"></script>
     <script src="js/core/popper.min.js"></script>
     <script src="js/core/bootstrap.min.js"></script>
     <script src="js/now-ui-kit.js?v=1.1.0"></script>
     <script src="js/aos.js"></script>
     <script src="scripts/main.js"></script>
-    <script>
-  $(document).ready(function () {
-    $('#contact-form-submit-btn').click(function () {
-        sendMail();
-    });
-  });
-  function sendMail(){
     
-          $("#contactDiv").html('<div style="align-content: right;display: inline-block;"  class="mycontactloader"></div>');
-
-    $.ajax({
-
-        type: 'POST',
-        // make sure you respect the same origin policy with this url:
-        // http://en.wikipedia.org/wiki/Same_origin_policy
-        url: 'https://kavinda.vitaz.dev/mail.php',
-        data: { 
-            'name': $("#contact-form-name").val(),  
-            'subject': $("#contact-form-subject").val(), 
-            'email': $("#contact-form-email").val(),
-            'message':$("#contact-form-message").val() 
-        },
-        success: function(msg){
-            
-            $("#contactDiv").html('<input id="contact-form-submit-btn" type="submit" value="Drop Me a Line"><br><p>'+msg+"</p>");
-        }
-
-});
-
-  }
-
-
-</script>
   </body>
 </html>
