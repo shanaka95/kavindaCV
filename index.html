@@ -625,11 +625,11 @@ Jayewardenepura</br></p>
         type: 'POST',
         // make sure you respect the same origin policy with this url:
         // http://en.wikipedia.org/wiki/Same_origin_policy
-        url: 'https://shanaka.vitaz.dev/mail.php',
+        url: 'https://kavinda.vitaz.dev/mail.php',
         data: { 
             'name': $("#contact-form-name").val(), 
             'email': $("#contact-form-email").val(), 
-            'subject': $("#contact-form-subject").val(), 
+            'title': $("#contact-form-title").val(), 
             'content':$("#contact-form-content").val() 
         },
         success: function(msg){
