@@ -35,7 +35,7 @@ $mail->Subject = 'Resume Contact';
 //echo 2;
 //echo $_REQUEST['name'];
 
-$a=     $_REQUEST['name']. "<br>" . $_REQUEST['subject']. "<br>" . $_REQUEST['email']. "<br>" . $_REQUEST['message']. "<br>" ;
+$a=     $_REQUEST['name']. "<br>" . $_REQUEST['email']. "<br>" . $_REQUEST['title']. "<br>" . $_REQUEST['message']. "<br>" ;
 
 $mail->Body = $a;
 //echo 1;
